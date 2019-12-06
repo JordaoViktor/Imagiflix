@@ -10,4 +10,8 @@ For to run this project localy, clone this repository
 
 git clone https://github.com/JordaoViktor/Imagiflix.git
 ```
-After this, install the necessery dependencies with yarn start
+After this, install the necessery dependencies with yarn install.
+
+```
+
+And finally yarn start
