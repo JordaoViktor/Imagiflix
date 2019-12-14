@@ -1,0 +1,78 @@
+.modal{
+  position: fixed;
+  z-index: 9;
+  display: grid;
+  grid-template-columns:40% 60% ;
+  place-items:center;
+  gap: 2rem;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 90vh;
+  background-color:rgba($dark,0.99) ;
+  padding:2rem ;
+  box-shadow: 0 .1rem 1rem $dark;
+  
+  &__poster{
+    width: auto;
+    height: 100%;
+    
+  }
+
+  &__info{
+    align-self: start;
+    position: relative;
+    padding-left: 2rem;
+    height: 100%;
+  };
+  &__close{
+    position:absolute;
+    top: -1rem;
+    right: 1rem;
+    color:$white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover{
+      font-size: -1.05rem;
+      top: .9;
+      right: .8rem;
+      color: $primary;
+      transform: rotate(90deg)
+    }
+  }
+  &__title{
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+  &__original-title{
+    font-size: 1rem;
+    font-style: italic;
+
+  }
+
+  &__description{
+    margin: 3rem auto;
+  }
+  &__data-container{
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap:2rem;
+    align-items: center ;
+  }
+
+  &__duration{
+    background-color: $primary;
+    border-radius: .2rem;
+    padding: .2rem .5rem;
+    width: fit-content;
+
+  }
+  &__website {
+    position: absolute;
+    text-decoration: none;
+    color:$primary;
+    bottom: 0;
+  }
+};
